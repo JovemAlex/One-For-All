@@ -36,6 +36,7 @@ DROP DATABASE IF EXISTS SpotifyClone;
     single_name VARCHAR(100) NOT NULL,
     single_length VARCHAR(100) NOT NULL,
     album_id INT NOT NULL,
+    artist_id INT NOT NULL,
     FOREIGN KEY (album_id) REFERENCES albuns(album_id)
   ) engine = InnoDB;
 
@@ -99,18 +100,18 @@ DROP DATABASE IF EXISTS SpotifyClone;
     (5, 'Somewhere Far Beyond', 2007),
     (6, 'I Put A Spell On You', 2012);
 
-  INSERT INTO SpotifyClone.singles (single_name, single_length, album_id)
+  INSERT INTO SpotifyClone.singles (single_name, single_length, album_id, artist_id)
   VALUES
-    ('BREAK MY SOUL', 279, 1),
-    ('VIRGO’S GROOVE', 369, 1),
-    ('ALIEN SUPERSTAR', 116, 1),
-    ('Don’t Stop Me Now', 203, 2),
-    ('Under Pressure', 152, 3),
-    ('Como Nossos Pais', 105, 4),
-    ('O Medo de Amar é o Medo de Ser Livre', 207, 5),
-    ('Samba em Paris', 267, 6),
-    ('The Bard’s Song', 244, 7),
-    ('Feeling Good', 100, 8);
+    ('BREAK MY SOUL', 279, 1, 1),
+    ('VIRGO’S GROOVE', 369, 1, 1),
+    ('ALIEN SUPERSTAR', 116, 1, 1),
+    ('Don’t Stop Me Now', 203, 2, 2),
+    ('Under Pressure', 152, 3, 2),
+    ('Como Nossos Pais', 105, 4, 3),
+    ('O Medo de Amar é o Medo de Ser Livre', 207, 5, 3),
+    ('Samba em Paris', 267, 6, 4),
+    ('The Bard’s Song', 244, 7, 5),
+    ('Feeling Good', 100, 8, 6);
 
   INSERT INTO SpotifyClone.following_artists (user_id, artist_id, following_artist_name)
   VALUES

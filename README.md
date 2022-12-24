@@ -1,10 +1,8 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+<h1>One For All 🐬</h1>
+<p><em>Projeto desenvolvido com os conhecimentos adquirido no módulo de Back-End da <a href="https://www.betrybe.com/" alt="Site da Trybe">Trybe!</a></em></p>
+
+<h3>Objetivo:</h3>
+<p>Neste projeto o objetivo era normalizar uma tabela não normalizada para consolidar todos os conceitos vistos até o momento.</p>
+
+<h3>Tecnologias Utilizadas:</h3>
+<img src='https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white'></img>
